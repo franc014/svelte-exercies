@@ -4,9 +4,11 @@
 	let x = 0;
 	let y = 0;
 	let hue = 0;
+	let cvx = null;
 
 	function initCanvas(canvas) {
 		ctx = canvas.getContext('2d');
+		cvx = canvas;
 		const { width, height } = canvas;
 		x = Math.floor(Math.random() * width);
 		y = Math.floor(Math.random() * height);
@@ -53,14 +55,31 @@
 			});
 		}
 	}
+
+	function clearCanvas(e) {
+		//todo: try using a custom event
+		cvx.classList.add('shake');
+		ctx.clearRect(0, 0, cvx.width, cvx.height);
+	}
+
+	function removeShake(e) {
+		e.currentTarget.classList.remove('shake');
+		initCanvas(e.currentTarget);
+	}
 </script>
 
 <svelte:window on:keydown={handleKey} />
 <div class="main">
 	<div class="canvasWrap">
-		<canvas width="1600" height="1000" id="etch-a-sketch" use:initCanvas /> />
+		<canvas
+			width="1600"
+			height="1000"
+			id="etch-a-sketch"
+			use:initCanvas
+			on:animationend={removeShake}
+		/>
 		<div class="buttons">
-			<button class="shake">Shake!</button>
+			<button class="shake" on:click={clearCanvas}>Shake!</button>
 		</div>
 	</div>
 </div>
@@ -93,7 +112,7 @@
 		margin-bottom: 20px;
 	}
 
-	canvas.shake {
+	.shake {
 		animation: shake 0.5s linear 1;
 	}
 
