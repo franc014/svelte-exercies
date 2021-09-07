@@ -1,10 +1,11 @@
 <script>
 	let moveAmount = 10;
 	let ctx = null;
+	let cvx = null;
 	let x = 0;
 	let y = 0;
 	let hue = 0;
-	let cvx = null;
+	let shaken = false;
 
 	function initCanvas(canvas) {
 		ctx = canvas.getContext('2d');
@@ -57,14 +58,13 @@
 	}
 
 	function clearCanvas(e) {
-		//todo: try using a custom event
-		cvx.classList.add('shake');
+		shaken = true;
 		ctx.clearRect(0, 0, cvx.width, cvx.height);
 	}
 
 	function removeShake(e) {
-		e.currentTarget.classList.remove('shake');
-		initCanvas(e.currentTarget);
+		shaken = false;
+		initCanvas(e.target);
 	}
 </script>
 
@@ -76,6 +76,7 @@
 			height="1000"
 			id="etch-a-sketch"
 			use:initCanvas
+			class:shake={shaken}
 			on:animationend={removeShake}
 		/>
 		<div class="buttons">
