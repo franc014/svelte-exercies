@@ -4,10 +4,6 @@
 	const dispatch = createEventDispatcher();
 	export let showModal = false;
 
-	/* afterUpdate(() => {
-		if (!showModal) showModal = false;
-	}); */
-
 	function closeModal(e) {
 		const isOutside = !e.target.closest('.modal-inner');
 		if (isOutside) {
