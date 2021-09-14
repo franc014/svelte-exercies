@@ -4,4 +4,5 @@
 	<li><a href="/etch-a-sketch">Etch a sketch</a></li>
 	<li><a href="/click-outside-modal">Click outside modal</a></li>
 	<li><a href="/scroll-to-accept">Scroll to accept</a></li>
+	<li><a href="/tabs">Tabs</a></li>
 </ul>

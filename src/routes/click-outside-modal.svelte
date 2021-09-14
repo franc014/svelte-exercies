@@ -1,7 +1,7 @@
 <script>
-	import Modal from '../components/Modal.svelte';
-	import Card from '../components/Card.svelte';
-	import Person from '../components/Person.svelte';
+	import Modal from '../components/click-outside-modal/Modal.svelte';
+	import Card from '../components/click-outside-modal/Card.svelte';
+	import Person from '../components/click-outside-modal/Person.svelte';
 
 	const people = [
 		{
