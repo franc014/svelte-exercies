@@ -6,4 +6,5 @@
 	<li><a href="/scroll-to-accept">Scroll to accept</a></li>
 	<li><a href="/tabs">Tabs</a></li>
 	<li><a href="/pixelated-face">Pixelated Face</a></li>
+	<li><a href="/sarcastic-text-generator">Sarcastic text</a></li>
 </ul>
