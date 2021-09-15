@@ -5,4 +5,5 @@
 	<li><a href="/click-outside-modal">Click outside modal</a></li>
 	<li><a href="/scroll-to-accept">Scroll to accept</a></li>
 	<li><a href="/tabs">Tabs</a></li>
+	<li><a href="/pixelated-face">Pixelated Face</a></li>
 </ul>
