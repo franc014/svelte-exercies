@@ -8,4 +8,5 @@
 	<li><a href="/pixelated-face">Pixelated Face</a></li>
 	<li><a href="/sarcastic-text-generator">Sarcastic text</a></li>
 	<li><a href="/shopping-list">Shopping list</a></li>
+	<li><a href="/gallery">Gallery</a></li>
 </ul>
