@@ -10,4 +10,5 @@
 	<li><a href="/shopping-list">Shopping list</a></li>
 	<li><a href="/gallery">Gallery</a></li>
 	<li><a href="/slider">Slider</a></li>
+	<li><a href="/async-typing">Async Typing</a></li>
 </ul>
