@@ -1,19 +1,21 @@
 <script>
+	import { recipes } from '$lib/stores/recipes';
 	let query = '';
+	let btnDisabled = false;
 
-	async function handleSubmit() {
-		console.log(query);
+	async function handleSubmit(e) {
+		btnDisabled = true;
 		const res = await fetch(`/api/${query}.recipes`);
 		const results = await res.json();
-		console.log(results);
+		//recipes.set(results.recipes.hits);//is it faster than update
+		recipes.update(() => results.recipes.hits);
+		btnDisabled = false;
 	}
-
-	$: console.log(query);
 </script>
 
 <form class="search" autocomplete="off" on:submit|preventDefault={handleSubmit}>
 	<input type="text" name="query" bind:value={query} />
-	<button name="submit" type="submit">Submit</button>
+	<button name="submit" type="submit" disabled={btnDisabled}>Submit</button>
 </form>
 
 <style>
