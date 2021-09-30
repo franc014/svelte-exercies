@@ -12,4 +12,5 @@
 	<li><a href="/slider">Slider</a></li>
 	<li><a href="/async-typing">Async Typing</a></li>
 	<li><a href="/recipes">Recipes</a></li>
+	<li><a href="/dad-jokes">Dad Jokes</a></li>
 </ul>
