@@ -13,4 +13,5 @@
 	<li><a href="/async-typing">Async Typing</a></li>
 	<li><a href="/recipes">Recipes</a></li>
 	<li><a href="/dad-jokes">Dad Jokes</a></li>
+	<li><a href="/currency-converter">Currency converter</a></li>
 </ul>
