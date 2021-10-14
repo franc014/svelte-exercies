@@ -15,4 +15,5 @@
 	<li><a href="/dad-jokes">Dad Jokes</a></li>
 	<li><a href="/currency-converter">Currency converter</a></li>
 	<li><a href="/colour-game">Web speech colour game</a></li>
+	<li><a href="/audio-visualizer-oscilloscope">Audio Visualizer Oscilloscope</a></li>
 </ul>
